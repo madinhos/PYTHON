@@ -1,0 +1,40 @@
+1. a)
+x = 2 ; y = 3 ;
+if (x > y):
+    result = x;
+else:
+    result = y;
+
+Podany kod jest poprawny sk³adniowo. Œredniki oznaczaj¹ koniec linii logicznej/polecenia.
+b)
+for i in "qwerty": if ord(i) < 100: print i
+
+Podany kod nie jest poprawny sk³adniowo.
+
+c)
+for i in "axby": print ord(i) if ord(i) < 100 else i
+
+Podany kod jest poprawny sk³adniowo.
+
+
+2.
+a)  L = L.sort()
+L.sort() nie zwraca nowej posortowanej tablicy tylko None. Zmienna L pozostaje pusta.
+
+b) x, y = 1, 2, 3
+Przypisanie krotki wymaga tyle samo wartoœci co zmiennych. Tutaj po lewej stronie mamy dwie zmienne, 
+a po prawej trzy wartoœci i przez kod nie zadzia³a.
+
+c) X = 1, 2, 3 ; X[1] = 4
+Krotki s¹ niezmiennymi sekwencjami, czyli nie mo¿emy zmieniæ wartoœci elementu X[1]
+
+d) X = [1, 2, 3] ; X[3] = 4
+Elementy listy s¹ numerowane od 0. Wyskoczy b³¹d "list index out of range".
+
+e) X = "abc" ; X.append("d")
+String nie posiada metody append.
+
+f) map(pow, range(8))
+map(function, sequence) wywo³uje funkcjê dla ka¿dego elementu sekwencji. 
+Funckja range generuje liczby ca³kowite od 0 do 7. 
+Metoda pow przyjmuje dwa argumenty, dlatego kod nie jest poprawny.
