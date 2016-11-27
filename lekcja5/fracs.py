@@ -10,7 +10,7 @@ def add_frac(frac1, frac2):
 		licznik = frac1[0]*frac2[1] + frac2[0]*frac1[1]
 		result = [licznik, mianownik]
 		
-	if((frac1[0] == 0) and (frac2[0] == 0)):
+	if((frac1[0] == 0) and (frac2[0] == 1)):
 		result = [0,0]
 		
 	if((frac1[0] == 0) and (frac2[0] != 0)):
@@ -31,7 +31,7 @@ def sub_frac(frac1, frac2):
 		licznik = frac1[0]*frac2[1] - frac2[0]*frac1[1]
 		result = [licznik, mianownik]
 		
-	if((frac1[0] == 0) and (frac2[0] == 0)):
+	if((frac1[0] == 0) and (frac2[0] == 1)):
 		result = [0,0]
 		
 	if((frac1[0] == 0) and (frac2[0] != 0)):
@@ -49,7 +49,7 @@ def mul_frac(frac1, frac2):
 		licznik = frac1[0] * frac2[0]
 		result = [licznik, mianownik]
 		
-	if((frac1[0] == 0) or (frac2[0] == 0)):
+	if((frac1[0] == 0) or (frac2[0] == 1)):
 		result = [0,0]
 			
 	return result	
@@ -62,7 +62,7 @@ def div_frac(frac1, frac2):
 		licznik = frac1[0] * frac2[0]
 		result = [licznik, mianownik]
 		
-	if((frac1[0] == 0) or (frac2[0] == 0)):
+	if((frac1[0] == 0) or (frac2[0] == 1)):
 		result = [0,0]
 			
 	return result	
