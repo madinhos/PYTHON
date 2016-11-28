@@ -22,16 +22,16 @@ class TestFractions(unittest.TestCase):
     def test_mul_frac(self): 
 		self.assertEqual(mul_frac([2, 4], [1, 4]), [2, 16])
 		self.assertEqual(mul_frac([2, 3], [3, 5]), [6, 15])
-		self.assertEqual(mul_frac([0, 3], [3, 5]), [0, 0])
-		self.assertEqual(mul_frac([2, 3], [0, 5]), [0, 0])
-		self.assertEqual(mul_frac([0, 3], [0, 5]), [0, 0])
+		self.assertEqual(mul_frac([0, 3], [3, 5]), [0, 1])
+		self.assertEqual(mul_frac([2, 3], [0, 5]), [0, 1])
+		self.assertEqual(mul_frac([0, 3], [0, 5]), [0, 1])
 		
     def test_div_frac(self): 
 		self.assertEqual(div_frac([2, 4], [1, 4]), [8, 4])
 		self.assertEqual(div_frac([2, 3], [3, 5]), [10, 9])
-		self.assertEqual(div_frac([0, 3], [3, 5]), [0, 0])
-		self.assertEqual(div_frac([2, 3], [0, 5]), [0, 0])
-		self.assertEqual(div_frac([0, 3], [0, 5]), [0, 0])
+		self.assertEqual(div_frac([0, 3], [3, 5]), [0, 1])
+		self.assertEqual(div_frac([2, 3], [0, 5]), [0, 1])
+		self.assertEqual(div_frac([0, 3], [0, 5]), [0, 1])
 
     def test_is_positive(self): 
 		self.assertEqual(is_positive([2, 4]), True)
