@@ -1,0 +1,9 @@
+Specyfikacja:
+Równanie ogólne prostej: a*x + b*y + c = 0
+
+Przypadki
+1) a = b = c = 0	---> Równianie nieokreœlone
+2) a = b = 0 i c != 0 	---> Równanie sprzeczne.
+3) a = 0 i b != 0 	---> Równanie przybiera postaæ By + C = 0, y = -C/B, x e R
+4) a != 0 i b = 0	---> Równanie przybiera postaæ Ax + C = 0, x = -C/A, y e R
+5) a != 0 i b != 0	---> Rozwi¹zaniem jest prosta: y = (-c-a*x)/b
