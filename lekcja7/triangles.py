@@ -3,7 +3,12 @@ from points import Point
 class Triangle:
 	def __init__(self, x1=0, y1=0, x2=0, y2=0, x3=0, y3=0):
 		
-		if  (x1 == x2 == x3 or y1 == y2 == y3):
+#sprawdzanie czy pkt sa wspolliniowe obliczajac wyznacznik macierzy
+# 	  |x1 y1 1|		
+# det |x2 y2 1| == 0
+# 	  |x3 y3 1|	
+		det = x1*y2*1 + x2*y3*1 + x3*y1*1 - 1*y2*x3 - 1*y3*x1 - 1*y1*x2
+		if  (det == 0):
 			raise ValueError("bledne dane inicjalizacyjne")	
 			
 		self.pt1 = Point(x1, y1)
@@ -34,9 +39,7 @@ class Triangle:
 		return Point(x,y)
 		
 	def area(self):
-		a = self.pt2.x - self.pt1.x
-		h = self.pt3.y - self.pt1.y
-		return abs((a*h)/2)
+		return (abs((self.pt1.x * (self.pt2.y - self.pt3.y) + self.pt2.x * (self.pt3.y - self.pt1.y) + self.pt3.x * (self.pt1.y - self.pt2.y)) / 2))
 		
 	def move(self, x, y):
 		if not (isinstance(x, int) or isinstance(y, int) or isinstance(x, float) or isinstance(y, float)):
