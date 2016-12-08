@@ -5,7 +5,7 @@ class Triangle:
 		
 #sprawdzanie czy pkt sa wspolliniowe obliczajac wyznacznik macierzy
 # 	  |x1 y1 1|		
-# det |x2 y2 1| == 0
+#     det |x2 y2 1| == 0
 # 	  |x3 y3 1|	
 		det = x1*y2*1 + x2*y3*1 + x3*y1*1 - 1*y2*x3 - 1*y3*x1 - 1*y1*x2
 		if  (det == 0):
