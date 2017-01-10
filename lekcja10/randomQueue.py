@@ -22,15 +22,13 @@ class randomQueue:
 		
 		if l <= 1:
 			data = self.items[0]
-			del self.items[0]
-			
+			del self.items[0]			
 			return data
 		
 		r = random.randint(0, l-1)
 		data = self.items[r]	
 		self.items[r], self.items[l-1] = self.items[l-1], self.items[r]
-		del self.items[l-1]
-		
+		del self.items[l-1]		
 		return data
 		
 		
