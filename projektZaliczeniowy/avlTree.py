@@ -32,7 +32,6 @@ class AVLTree:
 			self.root = w
 			return
 		else:
-
 			while True:
 				if(data < p.data):
 					if p.left is None:
