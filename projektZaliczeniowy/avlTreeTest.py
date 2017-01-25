@@ -5,7 +5,7 @@ class TestQueue(unittest.TestCase):
 
 	#test rotacji RR
 	#1		2
-	# 2	->  1 3
+	# 2	->     1 3
 	#  3
 	def test_RR_Rotation(self):
 		print
@@ -22,7 +22,7 @@ class TestQueue(unittest.TestCase):
 	
 	#test rotacji LL
 	#  1		2
-	# 2	->  1 3
+	# 2	->     1 3
 	#3	
 	def test_LL_Rotation(self):
 		avl = AVLTree()
@@ -38,7 +38,7 @@ class TestQueue(unittest.TestCase):
 		
 	#test rotacji RL
 	# 1		3
-	#  5	->  1 5
+	#  5	->     1 5
 	# 3	
 	def test_RL_Rotation(self):
 		avl = AVLTree()
@@ -54,7 +54,7 @@ class TestQueue(unittest.TestCase):
 
 	#test rotacji RL
 	# 5		3
-	#1	->  1 5
+	#1	->     1 5
 	# 3		
 	def test_LR_Rotation(self):
 		avl = AVLTree()
@@ -70,7 +70,7 @@ class TestQueue(unittest.TestCase):
 		
 	#test removeNode
 	# 2		3
-	#1 3	->  1		
+	#1 3	->     1		
 	def test_remove_Node(self):
 		avl = AVLTree()
 		avl.insert(1)
