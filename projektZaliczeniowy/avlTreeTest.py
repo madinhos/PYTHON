@@ -21,9 +21,9 @@ class TestQueue(unittest.TestCase):
 		)
 	
 	#test rotacji LL
-	#  1		2
+	#  3		2
 	# 2	->     1 3
-	#3	
+	#1	
 	def test_LL_Rotation(self):
 		avl = AVLTree()
 		avl.insert(3)
